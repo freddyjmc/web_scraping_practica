@@ -1,0 +1,12 @@
+{% for quote in quotes %}
+<div class="col-md-4 quote-card">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">{{ quote.text }}</p>
+            <h5 class="card-title">- {{ quote.author }}</h5>
+            <p class="card-subtitle mb-2 text-muted">{{ quote.about }}</p>
+            <p class="card-text"><small class="text-muted">Tags: {{ quote.tags }}</small></p>
+        </div>
+    </div>
+</div>
+{% endfor %}
